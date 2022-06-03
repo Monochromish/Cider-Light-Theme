@@ -1,0 +1,248 @@
+:root {
+	--keyColor: #fc3c44;
+	--sidebarColor: #fff;
+	--sidebarColorMix: #202225;
+}
+div#app {
+	--color1: #fff;
+	--color2: #202225;
+	--bgColor: transparent;
+	--bgWidth: 0px;
+	--bgHeight: 0px;
+	--chromeHeight: 55px;
+	--keyColor: #fc3c44;
+	width: 100%;
+	height: 100%;
+	background: #202225;
+	color: var(--sidebarColor);
+	user-select: none;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background-size: 400% 400%;
+
+	&.simplebg {
+		background: #202225;
+
+		.app-chrome {
+			z-index: 1;
+		}
+	}
+
+	button:hover {
+		.svg-icon {
+			--color: var(--keyColor);
+		}
+	}
+
+	.playback-button--small {
+		&.shuffle {
+			background-image: url(./Assets/Normal/shuffle.svg);
+			&.active {
+				background-image: url(./Assets/Hover/shuffle.svg);
+			}
+			&:hover {
+				background-image: url(./Assets/Hover/shuffle.svg);
+			}
+		}
+		&.repeat {
+			background-image: url(./Assets/Normal/repeat.svg);
+			&.active {
+				background-image: url(./Assets/Hover/repeat.svg);
+			}
+			&:hover {
+				background-image: url(./Assets/Hover/repeat.svg);
+			}
+		}
+		&.repeatOne {
+			background-image: url(./Assets/Normal/repeatOne.svg);
+			&.active {
+				background-image: url(./Assets/Hover/repeatOne.svg);
+			}
+			&:hover {
+				background-image: url(./Assets/Hover/repeatOne.svg);
+			}
+		}
+		&.cast {
+			background-image: url(./Assets/Normal/cast.svg);
+			&:hover {
+				background-image: url(./Assets/Hover/cast.svg);
+			}
+		}
+		&.queue {
+			background-image: url(./Assets/Normal/queue.svg);
+			&.active {
+				background-image: url(./Assets/Hover/queue.svg);
+			}
+			&:hover {
+				background-image: url(./Assets/Hover/queue.svg);
+			}
+		}
+		&.lyrics {
+			background-image: url(./Assets/Normal/lyrics.svg);
+			&.active {
+				background-image: url(./Assets/Hover/lyrics.svg);
+			}
+			&:hover {
+				background-image: url(./Assets/Hover/lyrics.svg);
+			}
+		}
+	}
+
+	.playback-button {
+		&.previous {
+			background-image: url(./Assets/Normal/backward.svg);
+			&:hover {
+				background-image: url(./Assets/Hover/backward.svg);
+			}
+		}
+		&.pause {
+			background-image: url(./Assets/Normal/pause.svg);
+			&:hover {
+				background-image: url(./Assets/Hover/pause.svg);
+			}
+		}
+		&.play {
+			background-image: url(./Assets/Normal/play.svg);
+			&:hover {
+				background-image: url(./Assets/Hover/play.svg);
+			}
+		}
+		&.next {
+			background-image: url(./Assets/Normal/forward.svg);
+			&:hover {
+				background-image: url(./Assets/Hover/forward.svg);
+			}
+		}
+	}
+
+	.volume-button--small {
+		&.active {
+			background-image: url(./Assets//Normal/mute.svg);
+			/* Because we don't want the muted svg o be #fc3c44 all the time. */
+			&:hover {
+				background-image: url(./Assets/Hover/mute.svg);
+			}
+		}
+		&:hover {
+			background-image: url(./Assets/Hover/volume.svg);
+		}
+	}
+
+	.md-btn {
+		color: var(--sidebarColor);
+		background-color: var(--sidebarColorMix);
+	}
+	.md-btn:hover {
+		color: var(--keyColor);
+	}
+	.md-btn.md-btn-primary {
+		background: var(--keyColor);
+		color: var(--sidebarColor);
+	}
+
+	.md-select {
+		color: var(--sidebarColorMix);
+	}
+	.md-select option {
+		// To fix the select menu being weird color.
+		color: var(--sidebarColor);
+		background-color: var(--sidebarColorMix);
+	}
+
+	.app-chrome {
+		.app-chrome-item {
+			&.volume {
+				input[type='range'] {
+					background-color: #333333;
+
+					&:hover {
+						&::-webkit-slider-thumb {
+							background: var(--keyColor);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.usermenu-item:hover {
+		background: var(--keyColor);
+	}
+
+	.gh-header {
+		background-color: var(--sidebarColorMix);
+		color: var(--sidebarColor);
+	}
+	.repos-list {
+		background-color: var(--sidebarColorMix);
+		color: var(--sidebarColor);
+	}
+	.style-editor-container {
+		background-color: var(--sidebarColor);
+		color: var(--sidebarColorMix);
+	}
+	.github-preview {
+		background-color: var(--sidebarColor);
+		color: var(--sidebarColorMix);
+	}
+	.repo-url {
+		color: var(--sidebarColorMix);
+	}
+	.svg-icon {
+		color: var(--sidebarColorMix);
+	}
+
+	.nav-link {
+		color: var(--sidebarColorMix);
+	}
+
+	#app-sidebar {
+		background: linear-gradient(
+			180deg,
+			var(--baseColorMix) calc(var(--chromeHeight1)),
+			var(--sidebarColorMix) calc(var(--chromeHeight1))
+		);
+	}
+	.app-sidebar-footer {
+		border-top: none;
+	}
+
+	.app-chrome .vdiv {
+		display: none;
+	}
+
+	.search-input {
+		padding-left: 10px;
+		background: var(--sidebarColorMix);
+	}
+
+	.app-chrome:not(.chrome-bottom) {
+		box-shadow: none;
+		filter: none;
+		background: var(--sidebarColorMix);
+	}
+}
+
+#app.twopanel
+	.app-chrome:not(.chrome-bottom)
+	.app-chrome--center
+	.top-nav-group
+	.app-sidebar-item:before {
+	background: var(--keyColor);
+}
+
+#app.twopanel .app-chrome.chrome-bottom {
+	box-shadow: none;
+}
+
+#app.twopanel .app-chrome:not(.chrome-bottom) {
+	box-shadow: none;
+	filter: none;
+	background: var(--sidebarColorMix);
+}
+
+#app-content {
+	background-color: var(--sidebarColor);
+	color: var(--sidebarColorMix);
+}
