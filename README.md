@@ -6,8 +6,8 @@
 - [x] Custom animations
 - [x] Supports both window format! Mojave & Maverick.
  
-![Mojave](./Preview.png)
-![Maverick](./Preview2.png)
+![Mojave](https://raw.githubusercontent.com/Monochromish/Cider-Light-Theme/main/Preview.png)
+![Maverick](https://raw.githubusercontent.com/Monochromish/Cider-Light-Theme/main/Preview2.png)
 
 ## Install
 
