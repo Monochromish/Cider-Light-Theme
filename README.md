@@ -2,11 +2,12 @@
 
 > A light theme for [Cider](https://cider.sh) with dark sidebar!
 
-[x] Dark sidebar
-[x] Custom animations
-[x] Supports both window format! Mojave & Maverick.
-![Mojave](./Preview.png)
-![Maverick](./Preview2.png)
+- [x] Dark sidebar
+- [x] Custom animations
+- [x] Supports both window format! Mojave & Maverick.
+ 
+![Mojave](https://raw.githubusercontent.com/Monochromish/Cider-Light-Theme/main/Preview.png)
+![Maverick](https://raw.githubusercontent.com/Monochromish/Cider-Light-Theme/main/Preview2.png)
 
 ## Install
 
@@ -28,7 +29,7 @@
 6. Click on the `Ok` button.
 7. Select the Theme and It should be applied.
 
-## Team
+## Credits
 
 This theme is maintained by [Monochromish](https://github.com/Monochromish).
 
