@@ -222,6 +222,29 @@ div#app {
 		filter: none;
 		background: var(--sidebarColorMix);
 	}
+
+	.nav-link {
+		color: var(--sidebarColor) !important;
+	}
+
+	.settings-panel .settings-window {
+		background: var(--sidebarColorMix);
+
+		.tab-content {
+			background-color: var(--sidebarColor);
+			color: var(--sidebarColorMix);
+			border-left: none;
+		}
+
+		.close-btn:before {
+			color: var(--sidebarColorMix);
+		}
+	}
+
+	.installed-themes-page .repo-header {
+		background-color: var(--sidebarColor);
+		color: var(--sidebarColorMix);
+	}
 }
 
 #app.twopanel
